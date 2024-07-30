@@ -1,0 +1,7 @@
+Flask
+Flask-Assets
+cssmin
+jsmin
+Flask-PyMongo
+python-dotenv
+opencv-python

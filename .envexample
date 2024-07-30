@@ -1,0 +1,14 @@
+#Flask app locator
+FLASK_APP=App/__init__.py
+
+# Flask app config variables
+SECRET_KEY=trueranomsecretkey
+FLASK_ENV=development
+SERVER_NAME=localhost:5000
+
+# Database initiatiion variables
+DB_URI=DBURI
+DB_PASSWORD = DB Password
+
+# Log file vars
+LOG_LEVEL=DEBUG
