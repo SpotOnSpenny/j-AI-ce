@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {% assets "css_all" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}" />
+    {% endassets %}
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand fixed-top bg-light text-center d-flex flex-column justify-content-center align-items-center align-content-center py-3"
+            style="height: 106px;background: var(--bs-light);box-shadow: 0px 4px 10px 2px;border-color: var(--bs-light);transform: translate(-20px) rotate(-9deg) scale(1.50);width: 356px;">
+            <div class="container">
+                <div class="d-flex flex-row justify-content-center align-items-center align-content-center align-self-center"
+                    style="position: absolute;display: flex;width: 100%;transform: translate(4px) rotate(9deg) scale(0.60);">
+                    <a class="navbar-brand d-flex flex-column align-items-center" href="#"
+                        style="transform: translate(4px) translateY(18px);">
+                        <h1 style="font-family: 'Maximum Voltage';font-size: 44px;color: #151410;">j-AI-ce</h1>
+                        <h1 style="font-family:'Alegreya'; font-size: 18.4px;">Your AI MTG assistant</h1>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="navbar-nav me-auto"></ul><button class="btn bg-primary" type="button"
+                            style="width: 140.5px;height: 45px;font-size: 18px;font-family: 'Maximum Voltage'; color: white; box-shadow: inset -1px 3px 10px 2px var(--bs-navbar-brand-color);">Scan
+                            Cards</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+    {% assets "js_all" %}
+    <script src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+</body>
+
+</html>

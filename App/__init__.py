@@ -42,7 +42,8 @@ def create_app():
     assets.register(
         "css_all",
         Bundle(
-            "css/*.css",
+            "css/bootstrap.min.css",
+            "css/all_css.css",
             output="min_assets/all.css",
             filters="cssmin"
         )
